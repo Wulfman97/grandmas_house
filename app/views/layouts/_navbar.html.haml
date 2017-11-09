@@ -1,0 +1,22 @@
+.navbar-fixed
+  %nav.white-text.green.darken-4.z-depth-4
+    .nav-wrapper
+      %a.titles.brand-logo.align-left{:href => "#"}
+      %a.brand-logo.center Grandmas House
+      %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+        %i.material-icons menu
+
+      %div
+        %ul#nav-mobile.right.hide-on-med-and-down.green.darken-4.z-depth-4
+          %li
+            = link_to 'Home', root_path
+          %li
+            = link_to 'About & Rooms', about_path
+         
+        %ul#mobile-demo.side-nav.white-text.z-depth-4
+          %li.overide
+          = link_to 'Home', root_path
+          %li.overide
+          = link_to 'About & Rooms', about_path 
+        
+        
